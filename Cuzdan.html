@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÜZDAN</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            margin: 0;
+            font-family: Arial,sans-serif;
+        }
+        .dashboard{
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+        }
+       
+        .top-buttons{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .button{
+            background: #444;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .button img{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            font-size: 24px;
+            margin-left: 55px;
+            margin-bottom: 15px;
+            width: 20px;
+            color: yellow;
+        }
+        .transactions{
+            background:#222;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .transaction{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .transaction img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .transaction info h3{
+            margin: 0;
+            font-size: 16px;
+
+        }
+        .transaction-info p{
+            margin: 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+        .transaction-amount{
+            margin-left: auto;
+            text-align: right;
+        }
+       .negative{
+        color: rgb(235, 229, 229);
+        font-weight: bolder;
+       }
+       .addMoney{
+            text-decoration: none;
+            color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="top-buttons">
+            <div class="button">
+                <img src="plus.jpeg" alt="">
+                <a href="./kur.html" class="addMoney"><span>Add Money</span></a>
+            </div>
+            <div class="button">
+               <img src="exchange.jpeg" alt="">
+                <span>Exchange</span>
+            </div>
+            <div class="button">
+                <img src="detail.jpeg" alt="">
+                <span>Details</span>
+            </div>
+            <div class="button">
+                <img src="point.jpeg" alt="">
+                <span>More</span>
+            </div>
+
+        </div>
+        <div class="transactions">
+            <div class="transaction">
+                <img src="nvidia.jpeg" alt="NVİDİA">
+                <div class="transaction-info">
+                    <h3>NVIDIA</h3>
+                    <p>Yesterday, 1:35 PM</p>
+                </div>
+                <div class="transaction-amount">
+                    <span class="negative">- $17.80</span>
+                    <p>0.05 NVDA</p>
+                </div>
+            </div>
+            <div class="transaction">
+                <img src="tesla.jpeg" alt="Tesla">
+                <div class="transaction-info">
+                    <h3>Tesla</h3>
+                    <p>Sep 27, 6:21 PM</p>
+                </div>
+                <div class="transaction-amount">
+                    <span class="negative">- $10 000.00</span>
+                    <p>0.12 TSLA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
